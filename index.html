@@ -11,12 +11,16 @@
     <div class="form">
         <label for="guessField">Sisesta pakkumine:</label>
         <input type="number" min="1" max="100" id="guessField" class="guessField">
-        <input type="submit" value="Kontrolli" class="guessSubmit">
+        <input type="submit" value="Kontrolli" id="myBtn" class="guessSubmit">
     </div>
-    <div class="results">
+    <div class="results" id="result">
+       <form id="userForm" >
         <p class="guesses"></p>
-        <p class="lastResults"></p>
+        <p class="lastResult"></p>
         <p class="lowOrHigh"></p>
+        <input type="button" value="Reset all fields"
+          onClick="resetForm()"/>
+          </form>
     </div>
     <script src="main.js"></script>
 </body>
